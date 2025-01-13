@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f5f3e9;
+            font-family: 'Georgia', serif;
+            color: #4c3f35;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3a1e1e;
+            color: #f5f3e9;
+            padding: 1em;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #593434;
+            padding: 0.5em;
+        }
+        nav a {
+            color: #f5f3e9;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2em;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h2 {
+            color: #3a1e1e;
+            font-size: 2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        table th, table td {
+            border: 1px solid #3a1e1e;
+            padding: 0.5em;
+            text-align: left;
+        }
+        table th {
+            background-color: #593434;
+            color: #f5f3e9;
+        }
+        footer {
+            text-align: center;
+            background-color: #3a1e1e;
+            color: #f5f3e9;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hogwarts Library</h1>
+        <p>Your magical gateway to knowledge</p>
+    </header>
+    <nav>
+        <a href="#users">Users</a>
+        <a href="#books">Books</a>
+        <a href="#loans">Loans</a>
+    </nav>
+    <div class="container">
+        <section id="users" class="section">
+            <h2>Registered Wizards & Witches</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Registration Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Harry Potter</td>
+                        <td>harry@hogwarts.edu</td>
+                        <td>123-456-7890</td>
+                        <td>2025-01-01</td>
+                    </tr>
+                    <!-- Add more users dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="books" class="section">
+            <h2>Available Books</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Copies Available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Advanced Potion-Making</td>
+                        <td>Libatius Borage</td>
+                        <td>Potions</td>
+                        <td>3</td>
+                    </tr>
+                    <!-- Add more books dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="loans" class="section">
+            <h2>Current Loans</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loan ID</th>
+                        <th>User ID</th>
+                        <th>Book ID</th>
+                        <th>Loan Date</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5001</td>
+                        <td>1</td>
+                        <td>101</td>
+                        <td>2025-01-10</td>
+                        <td>2025-01-20</td>
+                    </tr>
+                    <!-- Add more loans dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Hogwarts Library | A magical creation</p>
+    </footer>
+</body>
+</html>
